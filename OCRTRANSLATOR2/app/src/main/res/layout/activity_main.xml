@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#755AA6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ret"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/design"
+
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/log2"
+          />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="#071877"
+           android:textStyle="bold"
+          android:layout_marginTop="30dp"
+           android:text="OCR TRANSLATOR"
+           android:textSize="25dp"
+
+
+           />
+   </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="1500dp"
+        android:layout_height="250dp"
+        android:background="@drawable/view"
+        android:layout_margin="90dp"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="30dp"
+    android:gravity="center"
+
+    >
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/title"
+        android:text="SCANNER"
+        android:textSize="18dp"
+        android:backgroundTint="#ECF3EC"
+        android:textColor="#071877"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        android:id="@+id/scan"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scan"
+        android:text="Text-speech"
+        android:textSize="15dp"
+        android:backgroundTint="#ECF3EC"
+        android:textColor="#071877"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        android:id="@+id/text_speech"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scan"
+        android:text="TRANSLATOR"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="#ECF3EC"
+        android:textColor="#071877"
+        app:cornerRadius="50dp"
+        android:id="@+id/translate"
+        />
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

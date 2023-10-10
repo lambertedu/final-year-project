@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#755AA6"
+
+    tools:context=".scanner">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_holder"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/text_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Capture Text"
+            android:textAlignment="textStart"
+            android:minHeight="50dp"
+            android:background="@drawable/text"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linear_holder"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/capture"
+            app:cornerRadius="50dp"
+            android:textColor="#071877"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:backgroundTint="#ECF3EC"
+            android:text="Capture"
+            android:layout_margin="8dp"/>
+        <Button
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:backgroundTint="#ECF3EC"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/copy"
+            app:cornerRadius="50dp"
+            android:textColor="#071877"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Copy"
+            android:layout_margin="8dp"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

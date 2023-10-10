@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="#755AA6"
+    tools:context=".text_speech">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tt"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_text"
+                android:textSize="18dp"
+                android:minHeight="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/text"
+                android:hint="Enter Text or Paste copied Text"
+                android:gravity="start"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tt"
+        android:gravity="center"
+        android:layout_above="@+id/copy"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pitch"
+            android:textSize="16dp"
+            />
+
+        <SeekBar
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bar_pitch"
+
+            android:progress="50"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textSize="16dp"
+            />
+
+        <SeekBar
+            android:id="@+id/bar_speed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:progress="50" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/speak_button"
+            android:background="@drawable/baseline_play"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap To Play"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/copy"
+        app:cornerRadius="50dp"
+        android:backgroundTint="#ECF3EC"
+        android:text="COPY"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#071877"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="110dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>
